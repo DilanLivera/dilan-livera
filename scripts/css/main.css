@@ -60,27 +60,29 @@ header .logo {
   font-size: 35px;
 }
 
-a {
+header a {
   margin: 15px;
-  color: #000;
-  text-decoration: none;
 }
 
-a:hover {
+header a:hover {
   color: #000;
   border-bottom: 1px solid white;
 }
 
-.banner-area {
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+.main .banner-area {
   position: relative;
   background-image: url("../../imgs/banner.jpg");
   width: 100%;
-  height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.banner-area .title {
+.main .banner-area .title {
   color: white;
   letter-spacing: 0.3em;
   padding: 50px 100px;
@@ -91,17 +93,21 @@ a:hover {
   outline: 50px solid rgba(0, 0, 0, 0.5);
 }
 
-.banner-area h1 {
+.main .banner-area h1 {
   font-size: 50px;
 }
 
-.banner-area h3 {
+.main .banner-area h3 {
   padding-top: 20px;
   font-size: 30px;
   text-align: center;
 }
 
-.about-area, .portfolio-area, .services-area, .contact-area {
+.main .banner-area, .main .about-area, .main .portfolio-area, .main .contact-area {
+  min-height: 100vh;
+}
+
+.main .about-area, .main .portfolio-area, .main .contact-area {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -118,30 +124,56 @@ a:hover {
       -ms-flex-direction: row;
           flex-direction: row;
   padding-top: 40px;
-  width: 100%;
-  height: 100vh;
+  background-color: #fefefe;
 }
 
-.about-area .text-part, .portfolio-area .text-part, .services-area .text-part, .contact-area .text-part {
-  width: 65%;
+.main .about-area .text-part, .main .portfolio-area .text-part, .main .contact-area .text-part {
+  width: 55%;
   height: 80%;
 }
 
-.about-area h1, .portfolio-area h1, .services-area h1, .contact-area h1 {
+.main .about-area h1, .main .portfolio-area h1, .main .contact-area h1 {
   font-size: 50px;
 }
 
-.about-area p, .portfolio-area p, .services-area p, .contact-area p {
+.main .about-area p, .main .portfolio-area p, .main .contact-area p {
   text-align: justify;
   font-size: 20px;
   line-height: 50px;
 }
 
-.about-area, .services-area {
-  background-color: #fefefe;
+.main .portfolio-area {
+  padding-top: 100px;
 }
 
-.portfolio-area, .contact-area {
+.main .portfolio-area ul {
+  margin: 10px auto;
+}
+
+.main .portfolio-area ul li {
+  list-style: none;
+  padding: 5px;
+  margin-bottom: 8px;
+  border-radius: 3px;
+  background: -webkit-gradient(linear, left top, right top, from(#fce3ec), to(#ffe8cc));
+  background: linear-gradient(to right, #fce3ec, #ffe8cc);
+}
+
+.main .portfolio-area .project p {
+  padding: 2px 0;
+  line-height: 25px;
+}
+
+.main .portfolio-area .project .project-name {
+  font-weight: bold;
+}
+
+.main .portfolio-area .project a:hover {
+  color: #000;
+  border-bottom: 1px solid #000;
+}
+
+.main > div:nth-child(even) {
   background-color: #262626;
   color: #fff;
 }
