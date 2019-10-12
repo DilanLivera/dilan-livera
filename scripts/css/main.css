@@ -68,6 +68,10 @@ p {
   }
 }
 
+li {
+  list-style: none;
+}
+
 /* header styles */
 header {
   position: fixed;
@@ -234,7 +238,6 @@ header a:hover {
 }
 
 .main .portfolio-area ul li {
-  list-style: none;
   padding: 5px;
   margin-bottom: 8px;
   border-radius: 3px;
@@ -260,6 +263,42 @@ header a:hover {
 .main .portfolio-area .project a:hover {
   color: var(--primary-txt-color);
   border-bottom: 1px solid var(--secondary-border-color);
+}
+
+.main .contact-area h1 {
+  text-align: center;
+  margin: 20px auto;
+}
+
+.main .contact-area .contact-list {
+  margin: 0 auto;
+  font-size: xx-large;
+  width: 350px;
+}
+
+.main .contact-area .contact-list li {
+  padding-top: 20px;
+  border-bottom: 1px solid var(--primary-border-color);
+}
+
+.main .contact-area .contact-list i, .main .contact-area .contact-list span {
+  color: dodgerblue;
+}
+
+.main .contact-area .contact-list span::before {
+  content: ' - ';
+  color: var(--secondary-txt-color);
+}
+
+.main .contact-area .contact-list a:hover {
+  opacity: 0.5;
+}
+
+@media screen and (max-width: 600px) {
+  .main .contact-area .contact-list {
+    width: 180px;
+    font-size: large;
+  }
 }
 
 .main > div:nth-child(even) {
