@@ -7,6 +7,7 @@
   --secondary-area-color: #262626;
   --primary-border-color: #fff;
   --secondary-border-color: #000;
+  --project-heading-bg-color: grey;
 }
 
 * {
@@ -233,6 +234,12 @@ header a:hover {
   padding-top: 100px;
 }
 
+.main .portfolio-area .portfolio-description {
+  line-height: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
 .main .portfolio-area ul {
   margin: 10px auto;
 }
@@ -257,7 +264,11 @@ header a:hover {
 }
 
 .main .portfolio-area .project .project-name {
+  color: var(--secondary-txt-color);
   font-weight: bold;
+  background-color: var(--project-heading-bg-color);
+  padding: 1px 4px;
+  border-radius: 4px;
 }
 
 .main .portfolio-area .project a:hover {
