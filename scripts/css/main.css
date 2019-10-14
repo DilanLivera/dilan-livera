@@ -18,7 +18,7 @@
 }
 
 body {
-  font-family: 'Roboto Mono';
+  font-family: "Roboto Mono";
 }
 
 html {
@@ -195,11 +195,16 @@ header a:hover {
   }
 }
 
-.main .banner-area, .main .about-area, .main .portfolio-area, .main .contact-area {
+.main .banner-area,
+.main .about-area,
+.main .portfolio-area,
+.main .contact-area {
   min-height: 100vh;
 }
 
-.main .about-area, .main .portfolio-area, .main .contact-area {
+.main .about-area,
+.main .portfolio-area,
+.main .contact-area {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -219,13 +224,17 @@ header a:hover {
   background-color: var(--primary-area-color);
 }
 
-.main .about-area .text-part, .main .portfolio-area .text-part, .main .contact-area .text-part {
+.main .about-area .text-part,
+.main .portfolio-area .text-part,
+.main .contact-area .text-part {
   width: 55%;
   height: 80%;
 }
 
 @media screen and (max-width: 600px) {
-  .main .about-area .text-part, .main .portfolio-area .text-part, .main .contact-area .text-part {
+  .main .about-area .text-part,
+  .main .portfolio-area .text-part,
+  .main .contact-area .text-part {
     width: 90%;
   }
 }
@@ -289,15 +298,16 @@ header a:hover {
 
 .main .contact-area .contact-list li {
   padding-top: 20px;
-  border-bottom: 1px solid var(--primary-border-color);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-.main .contact-area .contact-list i, .main .contact-area .contact-list span {
+.main .contact-area .contact-list i,
+.main .contact-area .contact-list span {
   color: dodgerblue;
 }
 
 .main .contact-area .contact-list span::before {
-  content: ' - ';
+  content: " - ";
   color: var(--secondary-txt-color);
 }
 
